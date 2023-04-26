@@ -1,5 +1,5 @@
 /* 오토배너 */
-
+window.addEventListener("load", () => {
 //next 버튼 클릭했을때
 //li.slide_roll 
 //.slide_roll>ul>li.on>a
@@ -88,3 +88,5 @@ btnPlay.addEventListener('click', e =>{
 //     console.log(bnnNum)
 //   })
 // }
+
+})

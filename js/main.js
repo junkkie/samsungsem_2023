@@ -1,5 +1,5 @@
 //main.js
-
+window.addEventListener("load", () => {
 /* 주메뉴 */
 // 각 li에 마우스 올리면 높이값 가져와서 풀다운 메뉴 내려오고 보여야 됨,
 // 키보드 탭으로도 움직여야함
@@ -124,3 +124,5 @@ liStep1.forEach((el, i) => {
   el.querySelector("a").style.background = `url(../images/ico_inquiry_0${i+1}.png) no-repeat 50% 35%`;
   el.querySelector("a").style.color = '#333';
 });
+
+})
