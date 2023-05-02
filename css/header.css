@@ -59,8 +59,8 @@ dl.topMenu>dd:last-of-type>ul{height: 130px;}
 dl.topMenu>dd:last-of-type>ul>li{text-align: center;;padding: 10px 0;}
 
 /* 검색버튼 */
-div.btn_srch{position:absolute;right: 0;top: 0;}
-div.btn_srch>a{display:block;width: 60px;height: 70px;background: #043285 url(../images/btn_srch_ico.png)no-repeat 50% 50%;text-indent: -9999px;overflow: hidden}
+div.btn_srch{position:absolute; right: 0; top: 0;}
+div.btn_srch>a{display:block; width: 60px; height: 70px; background: #043285 url(../images/btn_srch_ico.png)no-repeat 50% 50%; text-indent: -9999px; overflow: hidden;}
 
 
 /* 검색박스 */
