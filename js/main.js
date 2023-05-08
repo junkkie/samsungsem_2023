@@ -83,7 +83,7 @@ window.addEventListener("load", () => {
   //top버튼
   const topBtn = document.querySelector(".btn_top");
   //클릭하면 스크롤 맨위로
-  topBtn.addEventListener("click",e=>{
+  topBtn.addEventListener("click",e => {
     e.preventDefault();
     window.scroll({
       top: 0,
@@ -94,13 +94,22 @@ window.addEventListener("load", () => {
 
   //스크롤 이벤트
   const museBtn = document.querySelector(".btn_sem")
-  const content1_li = document.querySelector(".content1>ul")
-  const content1_letter = document.querySelector(".newsletter")
-  const content2_= document.querySelector(".content2")
+
+  const con1_h2 = document.querySelector(".content1>h2")
+  const con1_ul = document.querySelector(".content1>ul")
+  const con1_letter = document.querySelector(".content1>.newsletter")
+
+  const con2 = document.querySelector(".content2")
+  const con2_span= document.querySelector(".content2>span")
+  const con2_h2 = document.querySelector(".content2>h2")
+  const con2_p = document.querySelector(".content2>p")
+
+  const list2_li = document.querySelectorAll(".list2>li")
+
 
   window.addEventListener("scroll", ()=>{
     let scll = document.querySelector("html").scrollTop;
-    console.log(scll)
+    console.log("scroll =>", scll)
 
     if(scll<=50){
       topBtn.classList.remove("on","ab");
@@ -117,11 +126,29 @@ window.addEventListener("load", () => {
       museBtn.classList.add("on");
     }
 
-    if(scll>=400){
-      content1_li.classList.add("on");
-    }
     if(scll>=500){
-      content1_letter.classList.add("on");
+      con1_h2.classList.add("on");
+      con1_ul.classList.add("on");
+    }
+    if(scll>=800){
+      con1_letter.classList.add("on");
+    }
+    if(scll>=1300){
+      con2.classList.add("on");
+      con2_h2.classList.add("on");
+      con2_p.classList.add("on");
+      con2_span.classList.add("on");
+    }
+    for(let i=0; i<list2_li.length; i++){
+      if(scll>=2000){
+        list2_li[0].classList.add("on");
+      }
+      if(scll>=2400){
+        list2_li[1].classList.add("on");
+      }
+      if(scll>=2800){
+        list2_li[2].classList.add("on");
+      }
     }
   })
 
